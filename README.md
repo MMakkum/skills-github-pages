@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Take a Selfie</title>
+  <title>Take the money</title>
   <style>
     body { text-align: center; margin: 0; padding: 0; }
     video { width: 100%; height: auto; }
@@ -25,7 +25,7 @@
   <button id="captureButton">Capture money</button>
   <br>
   <h2>Your money:</h2>
-  <img id="selfie" alt="Your money" style="width: 100%; max-width: 300px;">
+  <img id="money" alt="Your money" style="width: 100%; max-width: 300px;">
 
   <script>
     const video = document.getElementById('video');
@@ -42,7 +42,7 @@
         alert("Camera access denied or unavailable.");
       });
 
-    // Capture the selfie
+    // Capture the money
     captureButton.addEventListener('click', () => {
       const context = canvas.getContext('2d');
       const width = video.videoWidth;
